@@ -1,4 +1,1 @@
-echo error404-ar.com.ar > CNAME
-git add CNAME
-git commit -m "Fix CNAME for Fastly domain binding"
-git push
+error404-ar.com.ar
