@@ -1,0 +1,170 @@
+
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="theme-color" content="#020715">
+  <title>Error 404-ar</title>
+  <link rel="icon" type="image/png" href="/images/loguito.png">
+  <meta name="description" content="Esta pagina retro, para descubrir programas, juegos, sistemas operativos.">
+  <meta name="keywords" content="retro, programas, ISO, sistemas operativos>
+  <meta name="author" content="Error 404-ar">
+  <meta name="titule" content="Error 404">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="inicio" data-base="" data-tagline="✦ TU MUNDO EN UN SOLO LUGAR" data-menu="Menú principal" data-foot="Portal Principal">
+<div id="site-header"></div>
+<div class="page-wrapper">
+  <div class="shell">
+    <aside class="side" id="side"></aside>
+    <main class="main">
+      <div class="crumb">ERROR 404 / PORTAL PRINCIPAL</div>
+      <section class="hero" id="inicio">
+        <div class="eyebrow">★ TU MUNDO EN UN SOLO LUGAR ★</div>
+        <h1>Bienvenido a Error 404</h1>
+        <p>Un pequeño portal con alma de 2009: píxeles brillantes, música, juegos y rincones para explorar.</p>
+        <p style="margin:12px 0 0"><a class="download" href="programas/index.html" style="display:inline-block;padding:10px 15px">ENTRAR AL SITIO »</a></p>
+      </section>
+      <div class="marquee" aria-label="Anuncios"><span>★★★ ¡BIENVENIDO/A A ERROR 404! ★ Música, juegos y programas ★ Compartí este rincón con tus amigos ★ ¡NUEVO! Zona MSN y conversor de descargas ★★★</span></div>
+      <div class="widgets-grid">
+        <section class="card" id="relojes">
+          <div class="bar"><span>🕒 Relojes del mundo</span><span>LIVE</span></div>
+          <div class="card-body">
+            <div class="clockgrid">
+              <div class="clock"><b>🇦🇷 Bs. Aires</b><time id="ba">--:--:--</time><small>UTC−3</small></div>
+              <div class="clock"><b>🇺🇾 Montevideo</b><time id="uy">--:--:--</time><small>UTC−3</small></div>
+              <div class="clock"><b>🇨🇱 Santiago</b><time id="cl">--:--:--</time><small>Local</small></div>
+              <div class="clock"><b>🇵🇾 Asunción</b><time id="py">--:--:--</time><small>Local</small></div>
+              <div class="clock"><b>🇲🇽 C. de México</b><time id="mx">--:--:--</time><small>Local</small></div>
+              <div class="clock"><b>🇪🇸 Madrid</b><time id="es">--:--:--</time><small>Local</small></div>
+            </div>
+            <p class="stats">Actualización automática usando zonas horarias oficiales.</p>
+          </div>
+        </section>
+        <section class="card" id="radio">
+          <div class="bar"><span>📻 Radio Online Argentina</span><span>EN VIVO</span></div>
+          <div class="card-body">
+            <div class="player">
+              <div class="disc" id="radioDisc">📻</div>
+              <div class="track"><strong id="radioTitle">Elegí una emisora</strong><br><small id="radioStatus">Transmisión en directo</small></div>
+            </div>
+            <div class="radio-controls">
+              <select class="field" id="radioSelect" aria-label="Elegir radio argentina">
+                <option value="https://sa.mp3.icecast.magma.edge.msft.net/sc/radioconvos.mp3" data-name="Radio Con Vos 89.9">Radio Con Vos 89.9</option>
+                <option value="https://mdstrm.com/audio/60a2745ff943100826374a70/icecast.audio" data-name="Metro 95.1">Metro 95.1</option>
+                <option value="https://cadena3.ice.infomaniak.ch/cadena3-128.mp3" data-name="Cadena 3 96.9">Cadena 3 96.9</option>
+                <option value="https://stream.cienradios.com/MitreAM.mp3" data-name="Radio Mitre AM 790">Radio Mitre AM 790</option>
+              </select>
+              <button class="download" id="radioPlay" type="button">▶ Escuchar</button>
+              <button class="download disabled" id="radioStop" type="button">■ Detener</button>
+            </div>
+            <audio id="radioAudio" preload="none"></audio>
+            <p class="stats">Las emisoras transmiten desde sus propios servidores.</p>
+          </div>
+        </section>
+        <section class="card span-2" id="secciones">
+          <div class="bar"><span>💿 Secciones principales</span><span>ACCESO DIRECTO</span></div>
+          <div class="card-body">
+            <div class="shortcuts-grid">
+              <a class="download shortcut-btn" href="programas/index.html"><span>💿</span>Programas</a>
+              <a class="download shortcut-btn" href="juegos/index.html"><span>🕹️</span>Juegos</a>
+              <a class="download shortcut-btn" href="sistemas/index.html"><span>🗄️</span>Sistemas</a>
+            </div>
+            <p class="stats">Explorá los catálogos completos de software, juegos y sistemas.</p>
+          </div>
+        </section>
+        <section class="card" id="contador">
+          <div class="bar"><span>🔢 Contador de visitas</span><span class="blink">¡NUEVO!</span></div>
+          <div class="card-body center">
+            <p class="stats c">Tenés la visita número</p>
+            <div class="counter" id="counter" aria-label="Contador de visitas"></div>
+            <p class="stats c">🟢 Hay <strong id="online">9</strong> visitantes en línea</p>
+            <p class="stats c">Contador simulado, como en los viejos tiempos.</p>
+          </div>
+        </section>
+        <section class="card" id="cartel">
+          <div class="bar"><span>🪧 Cartel del ciber</span><span>$$$</span></div>
+          <div class="card-body">
+            <div class="cartel">
+              <h3>Ciber · Precios</h3>
+              <ul>
+                <li><span>Hora</span><b>$1,50</b></li>
+                <li><span>Media hora</span><b>$1</b></li>
+                <li><span>Impresión (la hoja)</span><b>$0,50</b></li>
+                <li><span>Quemado de CD</span><b>$2</b></li>
+              </ul>
+              <p class="warn">Prohibido bajar programas<br>No se hacen cambios de billetes</p>
+            </div>
+          </div>
+        </section>
+        <section class="card span-2" id="msn">
+          <div class="bar"><span>💬 Zona MSN · Generador de nicks y estados</span><span class="blink">¡NUEVO!</span></div>
+          <div class="card-body">
+            <div class="msn-row">
+              <input class="field" id="nickName" type="text" maxlength="20" placeholder="Escribí tu nombre (ej: Martín)" aria-label="Tu nombre">
+              <select class="field" id="nickStatus" aria-label="Estado"></select>
+              <select class="field" id="nickMsg" aria-label="Mensaje personal"></select>
+            </div>
+            <div class="msn-prev" id="nickPreview" aria-live="polite"></div>
+            <ul class="nicklist" id="nickList"></ul>
+          </div>
+        </section>
+        <section class="card" id="conversor">
+          <div class="bar"><span>⏳ ¿Cuánto tardabas en bajarlo?</span><span>56K</span></div>
+          <div class="card-body">
+            <div class="dl-form">
+              <select class="field" id="dlSize" aria-label="Qué se descarga">
+                <option value="4">Una canción MP3 (4 MB)</option>
+                <option value="20">Un programa (20 MB)</option>
+                <option value="620">Windows XP ISO (620 MB)</option>
+                <option value="700">Una película (700 MB)</option>
+              </select>
+              <select class="field" id="dlSpeed" aria-label="Tu conexión">
+                <option value="5">Dial-up 56k (≈5 KB/s)</option>
+                <option value="25">ADSL 256k (≈25 KB/s)</option>
+                <option value="50" selected>ADSL 512k (≈50 KB/s)</option>
+                <option value="100">ADSL 1 MB (≈100 KB/s)</option>
+              </select>
+            </div>
+            <div class="result" id="dlOut" aria-live="polite"></div>
+          </div>
+        </section>
+        <section class="card" id="frases">
+          <div class="bar"><span>🗣️ Frases de la época</span><span>AL AZAR</span></div>
+          <div class="card-body">
+            <p class="quote" id="quote" aria-live="polite"></p>
+            <button class="download" id="quoteBtn" type="button">Otra frase »</button>
+          </div>
+        </section>
+        <section class="card span-2" id="linea">
+          <div class="bar"><span>📅 Línea de tiempo 2000–2009</span><span>TOCÁ UN AÑO</span></div>
+          <div class="card-body">
+            <div class="arcade-tabs tl-tabs" id="tlTabs"></div>
+            <div class="tl-box" id="tlBox" aria-live="polite"></div>
+          </div>
+        </section>
+        <section class="card span-2" id="botones">
+          <div class="bar"><span>🔘 Muro de botones 88x31</span><span>LINKS AMIGOS</span></div>
+          <div class="card-body">
+            <div class="banners">
+              <span class="b88" style="background:linear-gradient(#0a7cff,#00338a)">ERROR 404 ✦</span>
+              <span class="b88" style="background:linear-gradient(#444,#111)">HECHO A MANO</span>
+              <span class="b88" style="background:linear-gradient(#2fae4f,#0f5a25)">SIN FRAMEWORKS</span>
+              <span class="b88" style="background:linear-gradient(#d83cc0,#6a1163)">MEJOR EN 1024x768</span>
+              <span class="b88" style="background:linear-gradient(#e08a00,#7a4100)">SIN TRACKING</span>
+              <span class="b88" style="background:linear-gradient(#0aa5b8,#04424c)">♪ WINAMP ON</span>
+            </div>
+          </div>
+        </section>
+        <div class="construction span-2">🚧 SITIO EN CONSTRUCCIÓN 🚧<br>Muy pronto: Rincón de recuerdos y libro de visitas. ¡Volvé a visitarnos!</div>
+      </div>
+      <footer class="foot" id="foot"></footer>
+    </main>
+  </div>
+</div>
+<script src="layout.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
