@@ -1,28 +1,36 @@
-# MiSitio Downloads
+# 💻 Programas para Windows
 
-## Estructura
-- `index.html`: página principal.
-- `css/styles.css`: estilos.
-- `js/app.js`: búsqueda, filtros y renderizado del catálogo.
-- `data/programas.json`: catálogo (lista JSON de programas).
-- `assets/favicon.svg`: ícono.
-- `legal/contacto.html`: página de contacto.
-- `robots.txt` y `sitemap.xml`: archivos para rastreadores.
+¡Bienvenido a mi página de programas! 🚀
 
-## Supermium incluido
-La ficha de Supermium incluye tres instaladores: Windows 7 (64 bits), Windows 7 (32 bits) y Windows XP (32 bits). Los enlaces son los de GitHub Releases proporcionados para la versión 150. Comprobá las notas de la versión y la compatibilidad antes de instalar.
+Este proyecto reúne una selección de programas, aplicaciones y herramientas útiles para Windows, con enlaces de descarga directos y organizados para que puedas encontrar fácilmente lo que necesitas.
 
-## Publicación
-Subí el contenido de esta carpeta respetando la estructura a la raíz de tu hosting. Probá desde un servidor web, ya que el catálogo se carga mediante `fetch()`.
+## 🌐 Sobre el proyecto
 
-Para probar localmente:
-```bash
-python -m http.server 8000
-```
-Abrí `http://localhost:8000`.
+La página está diseñada para ofrecer una experiencia sencilla, rápida y cómoda, permitiendo acceder a diferentes programas desde un solo lugar.
 
-## Antes de publicar
-1. Reemplazá el dominio de ejemplo en `sitemap.xml` y agregá `Sitemap: https://TU-DOMINIO/sitemap.xml` a `robots.txt`.
-2. Configurá HTTPS.
-3. Revisá enlaces, versiones y compatibilidad.
-4. Completá los datos reales de contacto y las páginas legales.
+## ✨ Características
+
+- 📥 Descargas directas de programas.
+- 🗂️ Programas organizados por categorías.
+- 🔎 Acceso fácil y rápido a cada aplicación.
+- 💻 Software para diferentes versiones de Windows.
+- 🎨 Interfaz sencilla, moderna y adaptable.
+- 🔗 Enlaces a fuentes oficiales y repositorios de descarga.
+
+## 🖥️ Compatibilidad
+
+Encontrarás programas compatibles con distintas versiones de Windows, dependiendo de los requisitos de cada aplicación.
+
+## 📌 Objetivo
+
+Mi objetivo es crear un sitio donde los usuarios puedan encontrar programas útiles de manera fácil, rápida y gratuita, sin complicaciones.
+
+## ⚠️ Aviso
+
+Los programas pertenecen a sus respectivos desarrolladores. Los enlaces de descarga se proporcionan con fines informativos y de distribución. Se recomienda descargar siempre desde fuentes oficiales y verificar los archivos antes de instalarlos.
+
+## ❤️ Créditos
+
+Proyecto desarrollado de forma independiente.
+
+¡Gracias por visitar la página y apoyar el proyecto!
