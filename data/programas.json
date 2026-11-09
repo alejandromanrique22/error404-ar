@@ -1,0 +1,39 @@
+[
+  {
+    "nombre": "Supermium",
+    "slug": "supermium",
+    "categoria": "Navegadores",
+    "version": "150",
+    "tamaño": "85 MB",
+    "fecha": "2024-03-01",
+    "sistemas": [
+      "Windows 7",
+      "Windows XP"
+    ],
+    "precio": "Gratis",
+    "editor": "win32ss",
+    "descripcion": "Supermium es un navegador basado en Chromium. Elegí el instalador correspondiente a tu versión de Windows y arquitectura.",
+    "detalles": "https://github.com/win32ss/supermium/releases/tag/v150-r2.02",
+    "instaladores": [
+      {
+        "nombre": "Windows 7 (64 bits)",
+        "sistema": "Windows 7",
+        "arquitectura": "64 bits",
+        "url": "https://github.com/win32ss/supermium/releases/download/v150-r2.02/supermium_150_64_setup.exe"
+      },
+      {
+        "nombre": "Windows 7 (32 bits)",
+        "sistema": "Windows 7",
+        "arquitectura": "32 bits",
+        "url": "https://github.com/win32ss/supermium/releases/download/v150-r2.02/supermium_150_32_setup.exe"
+      },
+      {
+        "nombre": "Windows XP (32 bits)",
+        "sistema": "Windows XP",
+        "arquitectura": "32 bits",
+        "url": "https://github.com/win32ss/supermium/releases/download/v150-p/supermium_150_32_setup.exe"
+      }
+    ],
+    "destacado": true
+  }
+]

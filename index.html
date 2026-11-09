@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#090d18">
+  <meta name="description" content="Explorá software para Windows, macOS, Linux y Android. Compará programas, consultá sus características y encontrá fuentes de descarga confiables.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <title>MiSitio Downloads — Software útil, sin vueltas</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/app.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MiSitio Downloads — Software útil, sin vueltas">
+  <meta property="og:description" content="Encontrá herramientas para trabajar, crear y proteger tus dispositivos.">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="./" aria-label="MiSitio Downloads, inicio">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>MiSitio <b>Downloads</b></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#seguridad">Seguridad</a>
+      </nav>
+      <a class="header-cta" href="#catalogo">Explorar software <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> TU BIBLIOTECA DE SOFTWARE</span>
+          <h1>Las herramientas<br>correctas. <span>Sin vueltas.</span></h1>
+          <p class="hero-lead">Descubrí programas para trabajar, crear y mantener tus dispositivos en marcha. Compará opciones y encontrá lo que necesitás.</p>
+          <form class="search-form" id="searchForm" role="search">
+            <span class="search-symbol" aria-hidden="true">⌕</span>
+            <label class="sr-only" for="search">Buscar programas</label>
+            <input id="search" type="search" placeholder="Buscá un programa, categoría o sistema…" autocomplete="off">
+            <button type="submit">Buscar <span aria-hidden="true">→</span></button>
+          </form>
+          <div class="hero-proof">
+            <span><i class="proof-check">✓</i> Catálogo organizado</span>
+            <span><i class="proof-check">✓</i> Filtros simples</span>
+            <span><i class="proof-check">✓</i> Información clara</span>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
+          <div class="visual-window">
+            <div class="window-top"><span></span><span></span><span></span><small>software / library</small></div>
+            <div class="window-body">
+              <div class="visual-label">DESCUBRÍ ALGO NUEVO</div>
+              <div class="visual-feature">
+                <div class="visual-app-icon">✳</div>
+                <div><strong>Tu próxima herramienta</strong><small>Productividad · Creatividad · Seguridad</small></div>
+              </div>
+              <div class="visual-lines"><i></i><i></i><i></i></div>
+              <div class="visual-bottom"><span>Explorá a tu ritmo</span><b>↗</b></div>
+            </div>
+          </div>
+          <div class="floating-chip chip-top"><span>✦</span> Descubrí</div>
+          <div class="floating-chip chip-bottom"><span>⌘</span> Para tus dispositivos</div>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <div><strong id="totalProgramas">—</strong><span>programas en catálogo</span></div>
+        <div><strong id="totalCategorias">—</strong><span>categorías para explorar</span></div>
+        <div><strong>4</strong><span>sistemas contemplados</span></div>
+      </div>
+    </section>
+
+    <section class="section container" id="categorias">
+      <div class="section-heading">
+        <div><span class="eyebrow">ENCONTRÁ TU CAMINO</span><h2>Explorá por categoría</h2><p>Un buen punto de partida para encontrar tu próxima herramienta.</p></div>
+      </div>
+      <div class="category-list" id="categories" aria-label="Filtrar por categoría"></div>
+    </section>
+
+    <section class="section catalog-section container" id="catalogo">
+      <div class="section-heading catalog-heading">
+        <div><span class="eyebrow">LA BIBLIOTECA</span><h2>Software para cada tarea<span class="title-period">.</span></h2><p>Compará características y filtrá el catálogo a tu manera.</p></div>
+        <span class="catalog-note"><span class="live-dot"></span> Catálogo disponible</span>
+      </div>
+      <div class="filter-panel">
+        <div class="filter-field"><label for="systemFilter">Sistema operativo</label><select id="systemFilter"><option value="">Todos los sistemas</option><option>Windows</option><option>Windows 7</option><option>Windows XP</option><option>macOS</option><option>Linux</option><option>Android</option><option>iOS</option></select></div>
+        <div class="filter-field"><label for="priceFilter">Modelo de precio</label><select id="priceFilter"><option value="">Cualquier precio</option><option>Gratis</option><option>Freemium</option><option>De pago</option></select></div>
+        <div class="filter-field"><label for="sortFilter">Ordenar por</label><select id="sortFilter"><option value="nombre">Nombre: A a Z</option><option value="recientes">Más recientes</option><option value="descargas">Más populares</option></select></div>
+        <button type="button" id="clearFilters" class="reset-button">↺ <span>Limpiar</span></button>
+      </div>
+      <div class="results-row"><p id="resultsCount" aria-live="polite">Cargando catálogo…</p><span>Elegí una ficha para ver sus datos</span></div>
+      <div id="programList" class="program-grid" aria-live="polite"><div class="loading-card">Preparando el catálogo…</div></div>
+      <div id="emptyState" class="empty-state" hidden><div class="empty-icon">⌕</div><h3>No encontramos resultados</h3><p>Probá con otra búsqueda o quitá alguno de los filtros.</p><button type="button" id="resetSearch">Ver todo el catálogo</button></div>
+      <div id="errorState" class="error-state" hidden><h3>No pudimos cargar el catálogo</h3><p>Verificá que <code>data/programas.json</code> esté publicado junto a esta página y abrí el sitio desde un servidor web.</p></div>
+    </section>
+
+    <section class="feature-band" id="seguridad">
+      <div class="container feature-inner">
+        <div class="feature-copy"><span class="eyebrow">DESCARGÁ CON CRITERIO</span><h2>Tu seguridad<br>también importa.</h2><p>Antes de instalar cualquier programa, verificá de dónde viene y que sea la versión que necesitás.</p></div>
+        <div class="safety-points">
+          <article><span class="safety-icon">↗</span><div><h3>Preferí fuentes oficiales</h3><p>Descargá desde el sitio del desarrollador siempre que sea posible.</p></div></article>
+          <article><span class="safety-icon">✓</span><div><h3>Verificá la integridad</h3><p>Si se publica un hash SHA-256, comparalo con el archivo descargado.</p></div></article>
+          <article><span class="safety-icon">⌁</span><div><h3>Revisá antes de instalar</h3><p>Comprobá editor, permisos, compatibilidad y firma digital cuando esté disponible.</p></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="closing container">
+      <div><span class="eyebrow">MENOS BÚSQUEDA. MÁS SOLUCIONES.</span><h2>Encontrá tu próxima herramienta.</h2><p>Explorá el catálogo y descubrí qué puede hacer más simple tu día.</p></div>
+      <a href="#catalogo" class="closing-cta">Explorar catálogo <span>→</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand" href="./"><span class="brand-mark">M</span><span>MiSitio <b>Downloads</b></span></a><p>Un lugar simple para descubrir software útil.</p></div>
+      <div class="footer-column"><strong>Explorar</strong><a href="#catalogo">Catálogo</a><a href="#categorias">Categorías</a><a href="#seguridad">Seguridad</a></div>
+      <div class="footer-column"><strong>Información</strong><a href="./legal/privacidad.html">Privacidad</a><a href="./legal/terminos.html">Términos de uso</a><a href="./legal/contacto.html">Contacto</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="currentYear">2026</span> MiSitio Downloads.</span><span>Hecho para encontrar software sin complicaciones.</span></div>
+  </footer>
+</body>
+</html>

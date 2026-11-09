@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Agregá la URL absoluta del sitemap cuando configures tu dominio.
